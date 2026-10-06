@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#075E54">
+<title>Delight College Admissions · WhatsApp Assistant Demo</title>
+<meta name="description" content="WhatsApp admissions assistant demo for Delight Technical College, by Balcom Group.">
+<link rel="icon" href="data:image/jpeg;base64,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">
+<style>
+:root{--wa:#075E54;--wa2:#128C7E;--wa3:#25D366;--bg:#efeae2;--out:#d9fdd3;--in:#fff;--ink:#111b21;--mut:#667781;--navy:#1d3a8a;--line:#e9edef}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%}
+body{font:15px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#d1d7db}
+a{color:#027eb5}
+.app{display:flex;flex-direction:column;height:100vh;height:100dvh;max-width:480px;margin:0 auto;background:var(--bg);position:relative;overflow:hidden}
+.tabs{display:flex;gap:4px;padding:6px 6px;background:#0b141a;flex:0 0 auto}
+.tab{flex:1;border:0;border-radius:8px;padding:8px 4px;font:600 13px/1.1 inherit;color:#cfd8dc;background:#1f2c33;cursor:pointer;position:relative}
+.tab.on{background:#fff;color:#0b141a}
+.tab .badge{position:absolute;top:-4px;right:-2px;background:var(--wa3);color:#fff;border-radius:10px;font-size:11px;padding:1px 6px;display:none}
+.tab .badge.show{display:inline-block}
+.view{display:none;flex:1 1 auto;flex-direction:column;min-height:0}
+.view.on{display:flex}
+.hdr{display:flex;align-items:center;gap:10px;background:var(--wa);color:#fff;padding:8px 10px;flex:0 0 auto}
+.hdr img{width:38px;height:38px;border-radius:50%;background:#fff;object-fit:cover}
+.hdr .t{font-weight:600;font-size:16px;line-height:1.15}
+.hdr .s{font-size:12px;opacity:.85}
+.hdr .sp{flex:1}
+.hdr .ic{opacity:.9;font-size:18px;letter-spacing:10px}
+.chat{flex:1 1 auto;overflow-y:auto;padding:10px 8px 6px;background-color:var(--bg);background-image:radial-gradient(rgba(0,0,0,.035) 1px,transparent 1px);background-size:14px 14px;-webkit-overflow-scrolling:touch}
+.day{text-align:center;margin:4px 0 10px}
+.day span{background:#fff;color:var(--mut);font-size:12px;padding:4px 10px;border-radius:8px;box-shadow:0 1px .5px rgba(0,0,0,.13)}
+.row{display:flex;margin:2px 0 6px}
+.row.me{justify-content:flex-end}
+.b{max-width:86%;padding:6px 8px 4px;border-radius:8px;box-shadow:0 1px .5px rgba(0,0,0,.13);white-space:pre-wrap;word-wrap:break-word;overflow-wrap:anywhere;position:relative}
+.row.bot .b{background:var(--in);border-top-left-radius:0}
+.row.me .b{background:var(--out);border-top-right-radius:0}
+.b .tm{float:right;font-size:11px;color:var(--mut);margin:6px 0 -2px 10px}
+.b .tm .tk{color:#53bdeb}
+.b b{font-weight:600}
+.btns{display:flex;flex-wrap:wrap;gap:6px;margin:-2px 0 8px;max-width:92%}
+.btns button{flex:1 1 auto;min-width:44%;border:0;background:#fff;color:#008069;font:600 14px/1.2 inherit;padding:10px 8px;border-radius:8px;box-shadow:0 1px .5px rgba(0,0,0,.13);cursor:pointer}
+.btns button:active{background:#f0f2f5}
+.btns.used button{color:#9aa5ab;cursor:default}
+.btns.used button.picked{color:#008069;background:#e7f6f1}
+.card{display:block;text-decoration:none;color:inherit;background:#f0f2f5;border-radius:6px;overflow:hidden;margin:2px 0 4px;border-left:4px solid var(--wa3)}
+.card .ct{padding:8px 10px}
+.card .c1{font-weight:600;color:var(--ink)}
+.card .c2{font-size:12px;color:var(--mut)}
+.card .c3{display:block;text-align:center;padding:9px;border-top:1px solid var(--line);color:#027eb5;font-weight:600;background:#fff}
+.ok{background:#e7f6f1!important;border:1px solid #b9e6d3}
+.typing .b{padding:10px 12px}
+.dots span{display:inline-block;width:7px;height:7px;margin:0 2px;background:#9aa5ab;border-radius:50%;animation:bl 1s infinite}
+.dots span:nth-child(2){animation-delay:.15s}.dots span:nth-child(3){animation-delay:.3s}
+@keyframes bl{0%,80%,100%{opacity:.3}40%{opacity:1}}
+.note{margin:10px 4px;background:#fff4f2;border:1px solid #f3c4bb;color:#7a2617;border-radius:10px;padding:10px 12px;font-size:14px}
+.note h4{margin:0 0 6px;font-size:14px}
+.note ul{margin:0;padding-left:18px}
+.cta{display:block;width:calc(100% - 8px);margin:8px 4px 14px;border:0;border-radius:10px;background:var(--wa2);color:#fff;font:600 15px inherit;padding:12px;cursor:pointer}
+.abbr{color:var(--mut);font-style:italic}
+.bar{display:flex;align-items:flex-end;gap:6px;padding:6px 6px 4px;background:transparent;flex:0 0 auto}
+.bar input{flex:1;min-width:0;border:0;border-radius:22px;padding:11px 14px;font-size:16px;background:#fff;box-shadow:0 1px .5px rgba(0,0,0,.13);outline:none}
+.bar button{width:44px;height:44px;border-radius:50%;border:0;background:#00a884;color:#fff;font-size:18px;cursor:pointer;flex:0 0 auto}
+.hint{font-size:11.5px;color:var(--mut);text-align:center;padding:0 8px 2px}
+.foot{flex:0 0 auto;text-align:center;font-size:11.5px;color:#54656f;background:#f0f2f5;padding:5px 6px calc(5px + env(safe-area-inset-bottom));border-top:1px solid var(--line)}
+.foot a{color:#54656f;text-decoration:none;font-weight:600}
+.team{flex:1 1 auto;overflow-y:auto;background:#f7f8fa;padding:12px}
+.team h2{margin:2px 0 2px;font-size:18px;color:var(--navy)}
+.team .sub{color:var(--mut);font-size:13px;margin-bottom:10px}
+.stats{display:flex;gap:8px;margin:8px 0 12px}
+.stat{flex:1;background:#fff;border-radius:10px;padding:10px;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.stat .n{font-size:22px;font-weight:700;color:var(--navy)}
+.stat .l{font-size:12px;color:var(--mut)}
+.lead{background:#fff;border-radius:10px;padding:10px 12px;margin-bottom:8px;box-shadow:0 1px 2px rgba(0,0,0,.08);border-left:4px solid var(--wa3)}
+.lead.sample{border-left-color:#c3cbd1;opacity:.85}
+.lead .top{display:flex;justify-content:space-between;gap:8px;font-weight:600}
+.lead .tm2{color:var(--mut);font-weight:400;font-size:12px;white-space:nowrap}
+.lead .meta{font-size:13px;color:#3b4a54;margin-top:3px}
+.tag{display:inline-block;font-size:11px;font-weight:600;border-radius:10px;padding:1px 7px;margin-right:4px;background:#e7f6f1;color:#00795c}
+.tag.g{background:#eef1f4;color:#54656f}
+.tag.new{background:#25D366;color:#fff}
+.empty{color:var(--mut);font-size:13px;background:#fff;border:1px dashed #c3cbd1;border-radius:10px;padding:12px;margin-bottom:8px}
+.small{font-size:12px;color:var(--mut);margin-top:12px}
+.lnk{border:0;background:none;color:#027eb5;font:inherit;font-size:12px;cursor:pointer;padding:0;text-decoration:underline}
+.toast{position:absolute;left:50%;top:56px;transform:translateX(-50%) translateY(-20px);background:#0b141a;color:#fff;font-size:13px;padding:8px 14px;border-radius:20px;opacity:0;transition:.3s;pointer-events:none;z-index:9;white-space:nowrap}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media (min-width:1100px){
+ body{background:#c9d1d6;padding:18px 0}
+ .app{max-width:1280px;height:calc(100vh - 36px);background:transparent;display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr auto;gap:18px;padding:0 18px;overflow:visible}
+ .tabs{display:none}
+ .view{display:flex!important;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.18);background:var(--bg)}
+ .view::before{content:attr(data-label);display:block;background:#0b141a;color:#fff;font-weight:600;font-size:13px;padding:8px 12px}
+ .foot{grid-column:1/-1;background:transparent;border:0}
+ .toast{top:12px}
+}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <div class="tabs" role="tablist">
+    <button class="tab on" data-v="today">Today</button>
+    <button class="tab" data-v="bot">With Balcom assistant</button>
+    <button class="tab" data-v="team">Admissions team <span class="badge" id="badge">0</span></button>
+  </div>
+
+  <!-- TODAY -->
+  <section class="view on" id="v-today" data-label="❌ Today: the current auto-reply">
+    <div class="hdr"><img src="data:image/jpeg;base64,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" alt=""><div><div class="t">Delight College Admissions</div><div class="s">business account</div></div><div class="sp"></div><div class="ic">⋮</div></div>
+    <div class="chat" id="todayChat">
+      <div class="day"><span>TODAY</span></div>
+      <div class="row me"><div class="b">How much is the fashion design course and when is the next intake?<span class="tm">7:42 pm <span class="tk">✓✓</span></span></div></div>
+      <div class="row bot"><div class="b">Hello, and thank you for choosing Delight Tailoring, Fashion &amp; Design School! ✂️👗✨ Your interest shows a dream within you — a dream that's ready to grow 🌱💛 …
+<span class="abbr">[continues with a long welcome message and a list of our branches]</span><span class="tm">7:42 pm</span></div></div>
+      <div class="row bot"><div class="b">Follow us 👇
+📸 Instagram
+▶️ YouTube
+🎵 TikTok
+🌐 Website
+🔗 Linktree
+<span class="abbr">[links abbreviated]</span><span class="tm">7:42 pm</span></div></div>
+      <div class="note"><h4>What the applicant still doesn't know</h4><ul><li>How much the course costs</li><li>When they can start</li><li>What to do next</li></ul><div style="margin-top:6px">Now they have to wait for a staff member to reply. Some won't wait, and they may enquire at another college instead.</div></div>
+      <button class="cta" id="goBot">See the same question answered by the assistant →</button>
+    </div>
+  </section>
+
+  <!-- BOT -->
+  <section class="view" id="v-bot" data-label="✅ With the Balcom assistant (try it)">
+    <div class="hdr"><img src="data:image/jpeg;base64,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" alt=""><div><div class="t">Delight College Admissions</div><div class="s" id="status">online · replies instantly</div></div><div class="sp"></div><div class="ic" title="Restart"><button id="restart" style="background:none;border:0;color:#fff;font-size:18px;cursor:pointer" aria-label="Restart">↻</button></div></div>
+    <div class="chat" id="chat"><div class="day"><span>TODAY</span></div></div>
+    <form class="bar" id="form" autocomplete="off"><input id="inp" placeholder="Type a question, e.g. evening classes?" enterkeyhint="send" maxlength="300"><button type="submit" aria-label="Send">➤</button></form>
+    <div class="hint">Type a question or tap a button</div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="view" id="v-team" data-label="👩🏾‍💼 Admissions team view">
+    <div class="team">
+      <h2>Admissions team view</h2>
+      <div class="sub">The assistant answers routine questions itself. Your team only gets applicants who have shared their details and asked to apply or be called.</div>
+      <div class="stats">
+        <div class="stat"><div class="n" id="sQ">0</div><div class="l">questions answered automatically</div></div>
+        <div class="stat"><div class="n" id="sL">0</div><div class="l">applicants passed to the team</div></div>
+      </div>
+      <div id="leads"></div>
+      <div class="small">Demo only, built from public information on delight.ac.ke (Oct 2026). Leads entered here stay on this device and are not sent anywhere. <button class="lnk" id="clear">Clear demo leads</button></div>
+    </div>
+  </section>
+
+  <div class="foot">Demo by Balcom Group · <a href="https://balcom.solutions" target="_blank" rel="noopener">balcom.solutions</a></div>
+  <div class="toast" id="toast"></div>
+</div>
+
+<script>
+/* ===== DATA (from delight.ac.ke + 2026/2027 prospectus, scraped 6 Oct 2026) ===== */
+var APPLY="https://app.cloudschool.co.ke/admissionv2?cid=qFa4ypmLNArB2HHl90YAlg==";
+var MAP="https://www.google.com/maps/place/?q=place_id:ChIJNdqI-SkRLxgRINvQwhe15_s";
+var PHONES="📞 Admissions (call/WhatsApp): +254 722 533 771\n📞 Hotline: +254 724 566 088\n✉️ info@delight.ac.ke";
+var HOURS="Mon–Fri 7:00am–7:00pm · Sat 8:00am–5:00pm (closed Sundays & public holidays)";
+var REG=8500;
+var MODES={ft:"Full-time / Online",pt:"Part-time / Evening",we:"Weekend only",hs:"Home schooling"};
+var FEES={ /* monthly, 3-month, 6-month, 12-month bulk (discounted) */
+ fashion:{ft:[13000,36000,69000,132000],pt:[11000,30000,54000,102000],we:[9000,24000,42000,78000],hs:[19000,54000,99000,186000]},
+ media:{ft:[11000,30000,57000,111000],pt:[10000,28500,51000,96000],we:[9000,24000,42000,78000],hs:[17000,48000,90000,174000]},
+ club:[5000,15000,30000,60000]
+};
+var SCHOOLS={fashion:"School of Tailoring, Fashion & Design",media:"School of Media & AI"};
+var ENTRY={L3:"KCPE or KCSE certificate, any grade. No prior training needed.",L4:"KCSE mean grade D- (minus), or a Level 3 Artisan certificate.",L5:"KCSE mean grade D (plain), or a Level 4 Certificate.",L6:"KCSE mean grade C- (minus), or a Level 5 Craft Certificate.",NITA:"KCPE or KCSE certificate, any grade. Open to anyone committed to a hands-on skill."};
+var C=[
+ {id:"fd6",s:"fashion",n:"Fashion Design",q:"Diploma · Level 6",d:"24 months",e:"TVET-CDACC",r:"L6",h:["The college's flagship fashion programme: advanced garment construction, CAD, quality control and fashion accessories","Specialised electives: Sportswear/Uniform or Lingerie/Occasion wear","Includes industrial attachment"],j:"Fashion designer, production manager, CAD/pattern technologist, or founder of your own label"},
+ {id:"fdt5",s:"fashion",n:"Fashion Design Technology",q:"Craft · Level 5",d:"12 months",e:"TVET-CDACC",r:"L5",h:["Covers ladies' and gents' wear construction","Pattern making plus entrepreneurship training","Leads directly to the Level 6 Diploma"],j:"Independent designer/boutique owner, pattern maker, production supervisor"},
+ {id:"fdt4",s:"fashion",n:"Fashion Design Technology",q:"Certificate · Level 4",d:"6 months",e:"TVET-CDACC",r:"L4",h:["Bridges basic garment construction and full fashion design","Styled garments and decorative fabric techniques"],j:"Garment production specialist, embellishment specialist, freelance garment maker"},
+ {id:"dress3",s:"fashion",n:"Fashion Design (Dressmaking)",q:"Artisan · Level 3",d:"3 months",e:"TVET-CDACC",r:"L3",h:["One of the quickest routes into fashion: 3 months to a recognised Artisan qualification","Small, hands-on classes"],j:"Self-employed dressmaker, alterations specialist, machinist"},
+ {id:"tail3",s:"fashion",n:"Fashion Design (Tailoring)",q:"Artisan · Level 3",d:"3 months",e:"TVET-CDACC",r:"L3",h:["Focus on gents' garment construction, a skill that's always in demand","Train on industrial machines with experienced tailors"],j:"Tailor/menswear specialist, uniform & workwear production, alterations"},
+ {id:"gm",s:"fashion",n:"Fashion Design & Garment Making",q:"NITA Trade Test · Artisan",d:"6 months",e:"NITA",r:"NITA",h:["Almost entirely practical, with mock trade tests throughout","Good for beginners or for formalising tailoring experience you already have"],j:"Certified machinist, self-employed tailor/dressmaker"},
+ {id:"knit",s:"fashion",n:"Knitting",q:"NITA Trade Test · Artisan",d:"",e:"NITA",r:"NITA",h:["Listed in the 2026 prospectus"],j:""},
+ {id:"model",s:"fashion",n:"Delight Models: Modelling & Etiquette",q:"Delight Modelling Club",d:"",e:"",r:"",club:1,h:["Runway, grooming, styling and personal branding","Fashion shows and professional photoshoots"],j:"Runway and commercial modelling"},
+ {id:"ai6",s:"media",n:"Artificial Intelligence",q:"Diploma · Level 6",d:"24 months",e:"TVET-CDACC",r:"L6",h:["Programming, data handling, machine learning and applied AI tools","No advanced maths background needed to start","Includes industrial attachment"],j:"Junior data analyst, AI/data support specialist, automation assistant"},
+ {id:"film6",s:"media",n:"Film Production",q:"Diploma · Level 6",d:"24 months",e:"TVET-CDACC",r:"L6",h:["Full pipeline: pre-production, production and post-production","Hands-on with cameras, lighting, sound and editing"],j:"Director, cinematographer, video editor, sound designer, producer"},
+ {id:"dj6",s:"media",n:"Digital Journalism",q:"Diploma · Level 6",d:"24 months",e:"TVET-CDACC",r:"L6",h:["Print, broadcast, multimedia and digital publishing","Industrial attachment in real media houses"],j:"Reporter, broadcast journalist, content producer, editor"},
+ {id:"gd6",s:"media",n:"Graphic Design",q:"Diploma · Level 6",d:"24 months",e:"TVET-CDACC",r:"L6",h:["Advanced brand strategy and creative direction","Industrial attachment in design agencies or studios"],j:"Senior designer/art director, brand strategist, studio owner"},
+ {id:"gd5",s:"media",n:"Graphic Design",q:"Craft · Level 5",d:"12 months",e:"TVET-CDACC",r:"L5",h:["Typography, branding, layout and digital design","Modern computer lab with industry software"],j:"Agency or in-house designer, freelance designer"},
+ {id:"gdn",s:"media",n:"Graphic Design",q:"NITA Trade Test · Artisan",d:"6 months",e:"NITA",r:"NITA",h:["A quick, practical route into graphic design"],j:"Junior designer, print shop design assistant, freelance flyers and social media graphics"},
+ {id:"anim6",s:"media",n:"Animation & Digital Media",q:"Diploma · Level 6",d:"24 months",e:"TVET-CDACC",r:"L6",h:["3D modelling, VFX and advanced motion graphics","Capstone project and industrial attachment"],j:"3D animator/VFX artist, motion designer, digital media producer"},
+ {id:"anim5",s:"media",n:"Animation & Digital Media",q:"Craft · Level 5",d:"12 months",e:"TVET-CDACC",r:"L5",h:["2D animation, motion graphics and character design","Training builds a portfolio as you go"],j:"2D animator, motion graphics designer, content creator"},
+ {id:"photo",s:"media",n:"Photography",q:"NITA Trade Test · Artisan",d:"12 months",e:"NITA",r:"NITA",h:["Shooting, lighting and post-processing","12 months to build a real portfolio"],j:"Studio/event photographer, product photographer, photo editor"},
+ {id:"video",s:"media",n:"Videography",q:"NITA Trade Test · Artisan",d:"12 months",e:"NITA",r:"NITA",h:["Real shooting and editing skills","Can lead on to the Film Production Diploma"],j:"Event videographer, social media video producer, video editor"},
+ {id:"ict",s:"media",n:"ICT (Computer Operator)",q:"NITA Trade Test · Artisan",d:"",e:"NITA",r:"NITA",h:["Listed in the 2026 prospectus"],j:""}
+];
+function byId(id){for(var i=0;i<C.length;i++)if(C[i].id===id)return C[i];return null}
+function k(n){return "KES "+n.toLocaleString("en-US")}
+function cname(c){return c.n+" ("+c.q.split(" · ")[0]+")"}
+
+/* ===== ENGINE: returns arrays of bot messages {t:text,b:[[label,action]],card:{},ok:bool} ===== */
+var S={course:null,cap:null,lead:{},q:0};
+function menuBtns(){return [["📚 Courses","courses"],["💰 Fees & intakes","fees"],["📍 Branches & location","branches"],["📝 How to apply","howto"],["👩🏾‍💼 Talk to a person","human"]]}
+function M(t,b,x){var m={t:t,b:b||[]};if(x)for(var p in x)m[p]=x[p];return m}
+var INTAKE="📅 *Intake:* the 2026 intake is open now. Apply today to secure your place, course and study mode, and our admissions team will confirm your start date.";
+
+function feeTable(s,mode){var f=FEES[s][mode];return "*"+MODES[mode]+"*: "+k(f[0])+"/month\n   3 months "+k(f[1])+" · 6 months "+k(f[2])+" · 12 months "+k(f[3])}
+function feesSchool(s){
+ var f=FEES[s];
+ return "💰 *"+SCHOOLS[s]+": tuition 2026/27*\n• Full-time/Online: "+k(f.ft[0])+"/month\n• Part-time/Evening: "+k(f.pt[0])+"/month\n• Weekend only: "+k(f.we[0])+"/month\n• Home schooling: "+k(f.hs[0])+"/month\nYou get a discount for paying 3, 6 or 12 months at once.\n➕ One-off registration fee: "+k(REG)+" (covers registration, student ID & T-shirt, starter pack, bag & locker, equipment maintenance, and activities).";
+}
+function act(a){
+ var p=a.split(":"),x=p[0],y=p[1];
+ if(x==="menu"||x==="start"){S.cap=null;return [M("Hi 👋 Welcome to *Delight Technical College* admissions.\nI can answer questions about courses, fees, intakes and applications any time of day. What would you like to know?",menuBtns())]}
+ if(x==="courses")return [M("We have two schools, both TVETA-accredited (TVETA/PRIVATE/TVC/0080/2022), with exams by TVET-CDACC and NITA. Which interests you?",[["✂️ Tailoring, Fashion & Design","school:fashion"],["🎬 Media & AI","school:media"]])];
+ if(x==="school"){var L=C.filter(function(c){return c.s===y});
+   var intro=y==="fashion"?"✂️ *School of Tailoring, Fashion & Design*\nRuns from 3-month Artisan courses up to a 2-year Diploma, at our CBD campus and Thika Road branch. Pick a course:":"🎬 *School of Media & AI*\nFilm, journalism, AI, design, photography and more, at our Nairobi CBD campus. Pick a course:";
+   return [M(intro,L.map(function(c){return [c.n+" · "+c.q.split(" · ")[0]+(c.d?" ("+c.d+")":""),"course:"+c.id]}).concat([["⬅️ Back","courses"]]),{list:1})]}
+ if(x==="course"){var c=byId(y);if(!c)return act("courses");S.course=c.id;
+   var t="*"+c.n+"*\n🎓 "+c.q+(c.e?" · examined by "+c.e:"")+"\n⏱️ Duration: "+(c.d||"our admissions team will confirm")+"\n✅ Entry: "+(c.r?ENTRY[c.r]:"open to all, just ask us")+"\n\n"+c.h.map(function(h){return "• "+h}).join("\n")+(c.j?"\n\n💼 Careers: "+c.j:"")+"\n\n🕐 Study modes: Full-time/Online, Evening, Weekend or Home schooling.";
+   return [M(t,[["💰 Fees for this course","cfees:"+c.id],["📝 Apply for this course","apply:"+c.id],["📚 Other courses","school:"+c.s],["🏠 Menu","menu"]])]}
+ if(x==="cfees"){var c2=byId(y)||byId(S.course);if(!c2)return act("fees");S.course=c2.id;
+   if(c2.club)return [M("💰 *Delight Modelling Club*\n"+k(FEES.club[0])+"/month · 3 months "+k(FEES.club[1])+" · 6 months "+k(FEES.club[2])+" · 12 months "+k(FEES.club[3])+"\n➕ Registration: "+k(REG)+" (one-off)\n\n"+INTAKE,[["📝 Apply now","apply:"+c2.id],["👩🏾‍💼 Talk to a person","human"],["🏠 Menu","menu"]])];
+   return [M("*"+cname(c2)+"*"+(c2.d?" · "+c2.d:"")+"\n"+feesSchool(c2.s)+"\n\n"+INTAKE+"\n\nWhich study mode suits you?",[["☀️ Full-time/Online","mode:ft"],["🌙 Evening","mode:pt"],["📅 Weekend","mode:we"],["🏠 Home schooling","mode:hs"],["📝 Apply now","apply:"+c2.id]])]}
+ if(x==="mode"){var cc=byId(S.course);var sc=cc?cc.s:"fashion";
+   var times={ft:"Classes Mon–Fri, 9:00am–12:00pm and 2:00–5:00pm.",pt:"Evening classes Mon–Fri, 5:30–8:00pm, so you can study after work.",we:"Classes on Saturdays, 10:00am–4:00pm.",hs:"Flexible home schooling. Admissions will agree a schedule with you."}[y];
+   var fsc=cc?[sc]:["fashion","media"];
+   return [M((cc?"*"+cname(cc)+"*\n":"")+fsc.map(function(s){return (cc?"":"_"+SCHOOLS[s]+"_\n")+feeTable(s,y)}).join("\n\n")+"\n➕ Registration: "+k(REG)+" (one-off)\n🕐 "+times+"\n\nWould you like to apply? It only takes a minute here. I'll send you the application link and let admissions know.",[["📝 Yes, apply now","apply"+(cc?":"+cc.id:"")],["👩🏾‍💼 Call me back","human"],["🏠 Menu","menu"]])]}
+ if(x==="ffees"){S.course="fd6";var f0=FEES.fashion;return [M("Great choice! 👗 *Fashion Design* is offered at several levels:\n• Diploma (Level 6): 24 months\n• Craft (Level 5): 12 months\n• Certificate (Level 4): 6 months\n• Artisan Dressmaking or Tailoring (Level 3): 3 months\n\n💰 *Tuition 2026/27* (School of Tailoring, Fashion & Design)\n• Full-time/Online: "+k(f0.ft[0])+"/month\n• Evening/Part-time: "+k(f0.pt[0])+"/month\n• Weekend only: "+k(f0.we[0])+"/month\nYou get a discount for paying 3, 6 or 12 months at once.\n➕ One-off registration: "+k(REG)+"\n\n"+INTAKE+"\n\nWhich level or study mode suits you?",[["🎓 Diploma details","course:fd6"],["✂️ 3-month courses","school:fashion"],["🌙 Evening","mode:pt"],["📅 Weekend","mode:we"],["📝 Apply now","apply:fd6"]])]}
+ if(x==="fees")return [M("Our fees depend on the school and study mode. Which school?\n\n"+INTAKE,[["✂️ Fashion & Design fees","sfees:fashion"],["🎬 Media & AI fees","sfees:media"],["💳 How to pay","pay"],["📝 Apply now","apply"]])];
+ if(x==="sfees")return [M(feesSchool(y)+"\n\n"+INTAKE,[["🌙 Evening classes","mode:pt"],["📅 Weekend classes","mode:we"],["💳 How to pay","pay"],["📝 Apply now","apply"]])];
+ if(x==="intake")return [M(INTAKE+"\n\nYou can study full-time/online, in the evenings, at weekends, or through home schooling. Courses run from 3 months (Artisan) to 2 years (Diploma).",[["📚 Courses","courses"],["💰 Fees","fees"],["📝 Apply now","apply"]])];
+ if(x==="pay")return [M("💳 *How to pay*\n• M-Pesa Paybill *522533*, Account *8023637#YourSurname* (e.g. 8023637#JUMA)\n• KCB Bank, Biashara Street branch. Account name: Delight Technical College, Account no. 1296930947\n\nOnce you're confirmed you'll get your course fee schedule (monthly, or 3, 6 or 12-month bulk at a discount). You can pay in instalments, and bursaries are available if you're eligible.",[["📝 Apply now","apply"],["👩🏾‍💼 Talk to a person","human"],["🏠 Menu","menu"]])];
+ if(x==="branches")return [M("📍 *Nairobi CBD (main campus)*\nDelight Center, 1st Floor, Muindi Mbingu Street, opposite Jevanjee Gardens. Both schools: Fashion & Design, and Media & AI.\n🚌 By matatu, get off at the Kencom or Odeon stage; it's a 3–5 minute walk. With Bolt/Uber, search for \"Delight Technical College, Muindi Mbingu Street\".\n\n📍 *Thika Road / Kasarani branch*\nLonak Business Centre, 2nd Floor. School of Fashion Design.\n\n🕐 Office hours: "+HOURS,[["🗺️ Open map","link:map"],["📚 Courses","courses"],["📝 Apply now","apply"],["🏠 Menu","menu"]])];
+ if(x==="howto")return [M("📝 *How to apply*\n*1.* Apply online (I can send you the link now), visit our CBD campus, or call/WhatsApp us.\n*2.* Submit a copy of your ID, passport or birth certificate, 2 passport photos and your KCPE/KCSE slip (where applicable), and pay the "+k(REG)+" registration fee.\n*3.* Get your admission confirmation and fee schedule, then start at the next intake.\n\n🎓 *Entry levels*\nLevel 3 Artisan: KCPE/KCSE, any grade\nLevel 4 Certificate: KCSE D-\nLevel 5 Craft: KCSE D\nLevel 6 Diploma: KCSE C-",[["📝 Start my application","apply"],["💳 How to pay","pay"],["🏠 Menu","menu"]])];
+ if(x==="req")return act("howto");
+ if(x==="hostel")return [M("🏠 *Accommodation*\nThe college doesn't run its own hostels, but we'll point you to safe, affordable ones nearby. Most students stay in Ngara or Parklands (2–4 km away), at about KES 7,000–13,500 a month. Many include breakfast and supper (based on prices collected in Sept 2026).\nThe full hostel guide is at delight.ac.ke/accommodation.",[["📚 Courses","courses"],["📝 Apply now","apply"],["🏠 Menu","menu"]])];
+ if(x==="aid")return [M("🤝 *Paying your fees*\n• You can pay in instalments\n• Discounts for paying 3, 6 or 12 months at once\n• Bursaries and financial help, subject to eligibility\n\nOur admissions team can go through the options with you.",[["👩🏾‍💼 Talk to a person","human"],["💰 See fees","fees"],["📝 Apply now","apply"]])];
+ if(x==="design")return [M("Happy to help! Do you mean fashion design or graphic design?",[["✂️ Fashion Design","course:fd6"],["🎨 Graphic Design","course:gd5"],["📚 All courses","courses"]])];
+ if(x==="apply"||x==="human"){S.lead={intent:x==="human"?"Call back":"Apply"};if(y)S.course=y;S.cap="name";
+   return [M(x==="human"?"Of course. I'll pass you to our admissions team so someone can call you back. 🙂\nFirst, what's your *full name*?":"Great, let's get you started! 🎉\nFirst, what's your *full name*?",[["✖️ Cancel","menu"]])]}
+ if(x==="cap_course"){S.lead.course=y==="unsure"?"Not sure yet":cname(byId(y));if(y!=="unsure")S.course=y;return askMode()}
+ if(x==="cap_mode"){S.lead.mode=y==="unsure"?"Not sure yet":MODES[y];return finish()}
+ if(x==="fallback")return [M("Sorry, I didn't quite get that 🙏 You can ask about *fees*, *intakes*, *courses*, *evening or weekend classes*, *location* or *how to apply*. Or choose below:",menuBtns())];
+ return act("fallback");
+}
+function askCourse(){
+ if(S.course){var c=byId(S.course);return [M("Thanks! Is this for *"+cname(c)+"*?",[["✅ Yes","cap_course:"+c.id],["🔄 A different course","cap_pick"]])]}
+ return pickCourse();
+}
+function pickCourse(){S.cap="course";return [M("Which course are you interested in?",[["Fashion Design (Diploma)","cap_course:fd6"],["Dressmaking (3 months)","cap_course:dress3"],["Tailoring (3 months)","cap_course:tail3"],["Graphic Design","cap_course:gd5"],["Film Production","cap_course:film6"],["Photography","cap_course:photo"],["Videography","cap_course:video"],["Artificial Intelligence","cap_course:ai6"],["Digital Journalism","cap_course:dj6"],["Not sure yet","cap_course:unsure"]],{list:1})]}
+function askMode(){
+ if(S.lead.intent==="Call back")return finish();
+ S.cap="mode";return [M("Which study mode would you prefer?",[["☀️ Full-time/Online","cap_mode:ft"],["🌙 Evening","cap_mode:pt"],["📅 Weekend","cap_mode:we"],["🏠 Home schooling","cap_mode:hs"],["🤔 Not sure yet","cap_mode:unsure"]])]
+}
+function finish(){
+ S.cap=null;var L=S.lead;L.time=new Date();var first=L.name.split(" ")[0];
+ var out=[];
+ if(L.intent==="Apply"){
+  out.push(M("Thank you, "+first+"! 🙌 Here's your application link. The online form takes a few minutes, and you'll need your ID/birth certificate number and passport photos:",[],{card:1}));
+ }
+ out.push(M("✅ *Passed to admissions team*\n\n👤 "+L.name+"\n📱 "+L.phone+"\n🎓 "+(L.course||"Not sure yet")+(L.mode?"\n🕐 "+L.mode:"")+"\n\nOne of our admissions officers will contact you on this number during office hours ("+HOURS+").\n\nNeed us sooner?\n"+PHONES,[["🏠 Main menu","menu"]],{ok:1,lead:1}));
+ return out;
+}
+function cleanName(t){t=t.replace(/^(hi|hello|hey)[,!.\s]+/i,"").replace(/^(my name is|my name's|i am|i'm|im|this is|naitwa|jina langu ni)\s+/i,"").replace(/[^A-Za-z\u00C0-\u024F' .-]/g,"").replace(/\s+/g," ").trim();
+ return t.split(" ").slice(0,4).map(function(w){return w.charAt(0).toUpperCase()+w.slice(1).toLowerCase()}).join(" ")}
+function cleanPhone(t){var d=t.replace(/[^\d+]/g,"");var n=d.replace(/\D/g,"");
+ if(/^0[17]\d{8}$/.test(n))n="254"+n.slice(1);else if(/^[17]\d{8}$/.test(n))n="254"+n;
+ if(/^254[17]\d{8}$/.test(n))return "+254 "+n.slice(3,6)+" "+n.slice(6,9)+" "+n.slice(9);
+ if(d.charAt(0)==="+"&&n.length>=9&&n.length<=15)return "+"+n;return null}
+function capture(t){
+ var low=t.toLowerCase().trim();
+ if(/^(cancel|menu|stop|exit|back)$/.test(low)){S.cap=null;return act("menu")}
+ if(S.cap==="name"&&(/\?/.test(t)||t.split(/\s+/).length>5)){S.cap=null;S.q++;return route(t)}
+ if(S.cap==="name"){var n=cleanName(t);if(n.replace(/[^A-Za-z]/g,"").length<2)return [M("Please type your name, e.g. *Jane Wanjiru* 🙂",[["✖️ Cancel","menu"]])];
+   S.lead.name=n;S.cap="phone";return [M("Nice to meet you, "+n.split(" ")[0]+"! 📱 What's the best *phone number* to reach you on? (e.g. 0712 345 678)",[["✖️ Cancel","menu"]])]}
+ if(S.cap==="phone"){var p=cleanPhone(t);if(!p)return [M("Hmm, that doesn't look like a phone number. Please try again, e.g. *0712 345 678* or *+254 712 345 678*.",[["✖️ Cancel","menu"]])];
+   S.lead.phone=p;S.cap="course";return askCourse()}
+ if(S.cap==="course"&&S.course&&/^(yes|yeah|yep|ya|ndio|ndiyo|sawa|ok|okay|correct|sure)\b/.test(low)){S.lead.course=cname(byId(S.course));return askMode()}
+ if(S.cap==="course"){var c=detectCourse(low);if(c){S.course=c;S.lead.course=cname(byId(c))}else S.lead.course=t.slice(0,60);return askMode()}
+ if(S.cap==="mode"){var m=/even|night|part/.test(low)?"pt":/week|sat/.test(low)?"we":/home/.test(low)?"hs":/full|day|online/.test(low)?"ft":null;S.lead.mode=m?MODES[m]:t.slice(0,40);return finish()}
+ S.cap=null;return act("menu");
+}
+function detectCourse(s){
+ var r=[[/artificial|\bai\b|machine learning/,"ai6"],[/film/,"film6"],[/journalis/,"dj6"],[/animat/,"anim5"],[/graphic/,"gd5"],[/photo/,"photo"],[/video/,"video"],[/\bict\b|computer/,"ict"],[/model/,"model"],[/knit/,"knit"],[/dress ?mak/,"dress3"],[/tailor/,"tail3"],[/garment|sew/,"gm"],[/fashion/,"fd6"]];
+ for(var i=0;i<r.length;i++)if(r[i][0].test(s))return r[i][1];return null}
+function route(t){
+ var s=" "+t.toLowerCase().replace(/[?!.,]/g," ")+" ";
+ var c=detectCourse(s);
+ var fee=/fee|cost|how much|price|charge|pay|bei|ksh|kes|tuition|pesa|afford|cheap|expensive/.test(s);
+ var intake=/intake|start|begin|join|next class|when|enrol|enroll|january|may |september|deadline|open/.test(s);
+ var apply=/apply|application|register|registration|admission|sign up|enrol|enroll/.test(s);
+ if(/ talk | human| person| agent| speak| call me|someone|callback|call back/.test(s))return act("human");
+ if(/^\s*(hi|hello|hey|habari|niaje|sasa|mambo|good (morning|afternoon|evening)|hujambo|menu|start)\s*$/.test(s))return act("menu");
+ if(/even|night|after work|part[ -]?time/.test(s))return act("mode:pt");
+ if(/weekend|saturday/.test(s))return act("mode:we");
+ if(/online|home ?school|distance|remote|virtual/.test(s))return act("mode:ft");
+ if((fee||intake)&&c==="fd6"&&!/diploma|level|craft|certificate/.test(s))return act("ffees");
+ if(fee&&c){S.course=c;return act("cfees:"+c)}
+ if(c&&(intake)){S.course=c;return act("cfees:"+c)}
+ if(/how much/.test(s)&&/design/.test(s))return act("design");
+ if(/install|instalment|scholar|bursar|sponsor|discount|financial|helb/.test(s))return act("aid");
+ if(/m-?pesa|paybill|bank|how (do i|to) pay/.test(s))return act("pay");
+ if(fee)return act("fees");
+ if(/where|location|locat|address|branch|campus|direction|map|thika|kasarani|cbd|town|find you|situated/.test(s))return act("branches");
+ if(/hostel|accommodation|accomodation|stay|room|housing/.test(s))return act("hostel");
+ if(/requirement|qualif|grade|kcse|kcpe|document|need to (join|apply)|d plain|c minus|c-|d-/.test(s))return act("howto");
+ if(apply)return act("howto");
+ if(intake)return act("intake");
+ if(c){return act("course:"+c)}
+ if(/design/.test(s))return act("design");
+ if(/course|program|programme|study|offer|diploma|certificate|artisan|craft/.test(s))return act("courses");
+ if(/ (thank|thanks|asante|ok|okay|great|cool|sawa) /.test(s))return [M("You're welcome! 😊 Anything else I can help with?",menuBtns())];
+ return act("fallback");
+}
+function handleText(t){if(S.cap)return capture(t);S.q++;return route(t)}
+function handleAction(a){
+ if(a==="cap_pick")return pickCourse();
+ if(a.indexOf("cap_")!==0&&a!=="menu"&&a!=="start")S.q++;
+ if(a.indexOf("cap_")!==0&&a!=="apply"&&a.indexOf("apply:")!==0&&a!=="human")S.cap=null;
+ return act(a);
+}
+
+/* ===== LEADS (team view) ===== */
+var SAMPLE=[{name:"Faith W.",course:"Fashion Design (Diploma)",mode:"Part-time / Evening",intent:"Apply",time:"08:14",sample:1},{name:"Brian O.",course:"Film Production (Diploma)",mode:"Weekend only",intent:"Call back",time:"07:52",sample:1}];
+var LEADS=[];try{LEADS=JSON.parse(localStorage.getItem("dl_leads")||"[]")}catch(e){LEADS=[]}
+var QN=0;try{QN=+localStorage.getItem("dl_q")||0}catch(e){}
+function save(){try{localStorage.setItem("dl_leads",JSON.stringify(LEADS));localStorage.setItem("dl_q",String(QN))}catch(e){}}
+
+/* ===== UI ===== */
+var $=function(id){return document.getElementById(id)};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function fmt(s){return esc(s).replace(/\*([^*\n]+)\*/g,"<b>$1</b>").replace(/(^|[\s(])_([^_\n]+)_/g,"$1<i>$2</i>")}
+function now(){var d=new Date(),h=d.getHours(),m=d.getMinutes();return (h%12||12)+":"+(m<10?"0":"")+m+" "+(h<12?"am":"pm")}
+function hhmm(d){d=new Date(d);var h=d.getHours(),m=d.getMinutes();return (h<10?"0":"")+h+":"+(m<10?"0":"")+m}
+var chat,busy=false,queue=[],DELAY=650;
+function scroll(){chat.scrollTop=chat.scrollHeight}
+function addMe(t){var r=document.createElement("div");r.className="row me";r.innerHTML='<div class="b">'+esc(t)+'<span class="tm">'+now()+' <span class="tk">✓✓</span></span></div>';chat.appendChild(r);scroll()}
+function lockButtons(picked){var bs=chat.querySelectorAll(".btns:not(.used)");for(var i=0;i<bs.length;i++){bs[i].classList.add("used");var b=bs[i].querySelectorAll("button");for(var j=0;j<b.length;j++){b[j].disabled=true;if(picked&&b[j]===picked)b[j].classList.add("picked")}}}
+function renderBot(m){
+ var r=document.createElement("div");r.className="row bot";
+ var html='<div class="b'+(m.ok?" ok":"")+'">'+fmt(m.t);
+ if(m.card)html+='<a class="card" href="'+APPLY+'" target="_blank" rel="noopener"><div class="ct"><div class="c1">📝 Apply online: Delight Technical College</div><div class="c2">app.cloudschool.co.ke · Official admissions portal</div></div><span class="c3">Open application form</span></a>';
+ html+='<span class="tm">'+now()+'</span></div>';r.innerHTML=html;chat.appendChild(r);
+ if(m.b&&m.b.length){var w=document.createElement("div");w.className="btns";
+  m.b.forEach(function(x){var b=document.createElement("button");b.type="button";b.textContent=x[0];b.setAttribute("data-a",x[1]);
+   if(m.list)b.style.minWidth="100%";
+   b.onclick=function(){onButton(b,x[0],x[1])};w.appendChild(b)});chat.appendChild(w)}
+ if(m.lead)addLead();
+ scroll();
+}
+function typing(on){var t=$("typing");if(on&&!t){t=document.createElement("div");t.id="typing";t.className="row bot typing";t.innerHTML='<div class="b"><span class="dots"><span></span><span></span><span></span></span></div>';chat.appendChild(t);$("status").textContent="typing…"}else if(!on&&t){t.parentNode.removeChild(t);$("status").textContent="online · replies instantly"}scroll()}
+function play(msgs,done){
+ busy=true;var i=0;
+ (function next(){if(i>=msgs.length){busy=false;if(done)done();return}
+  typing(true);setTimeout(function(){typing(false);renderBot(msgs[i++]);next()},i===0?DELAY:DELAY+150)})();
+}
+function safe(fn){try{return fn()}catch(e){if(window.console)console.error(e);S.cap=null;return [M("Sorry, something went wrong on my side 🙏 Here's the menu:",menuBtns())]}}
+function onButton(btn,label,a){
+ if(busy)return;
+ if(a.indexOf("link:")===0){window.open(MAP,"_blank","noopener");return}
+ lockButtons(btn);addMe(label.replace(/^[^\w(]+\s*/,"")||label);
+ var before=S.q;var out=safe(function(){return handleAction(a)});if(S.q>before)bumpQ();play(out);
+}
+function onSend(e){if(e)e.preventDefault();var v=$("inp").value.trim();if(!v||busy)return;$("inp").value="";lockButtons(null);addMe(v);
+ var before=S.q;var out=safe(function(){return handleText(v)});if(S.q>before)bumpQ();play(out)}
+function bumpQ(){QN++;save();renderTeam()}
+function addLead(){var L=S.lead;LEADS.unshift({name:L.name,phone:L.phone,course:L.course||"Not sure yet",mode:L.mode||"",intent:L.intent,time:hhmm(L.time||new Date()),fresh:1});save();renderTeam();toast("✅ New applicant passed to admissions team");var bd=$("badge");bd.textContent=LEADS.length;bd.classList.add("show")}
+function renderTeam(){
+ $("sQ").textContent=QN;$("sL").textContent=LEADS.length;
+ var h="";if(!LEADS.length)h='<div class="empty">No applicants yet. Complete a chat in "With Balcom assistant" (tap 📝 Apply) and the applicant will appear here straight away.</div>';
+ LEADS.forEach(function(l,i){h+='<div class="lead"><div class="top"><span>'+esc(l.name)+'</span><span class="tm2">'+esc(l.time)+'</span></div><div class="meta">🎓 '+esc(l.course)+(l.mode?" · "+esc(l.mode):"")+'</div><div class="meta">'+(l.phone?"📱 "+esc(l.phone)+" ":"")+'</div><div style="margin-top:4px">'+(i===0&&l.fresh?'<span class="tag new">NEW</span>':'')+'<span class="tag">'+esc(l.intent==="Apply"?"Application link sent":"Wants a call back")+'</span><span class="tag g">via WhatsApp</span></div></div>'});
+ SAMPLE.forEach(function(l){h+='<div class="lead sample"><div class="top"><span>'+esc(l.name)+' <span class="tag g">sample</span></span><span class="tm2">'+l.time+'</span></div><div class="meta">🎓 '+esc(l.course)+" · "+esc(l.mode)+'</div><div style="margin-top:4px"><span class="tag">'+(l.intent==="Apply"?"Application link sent":"Wants a call back")+'</span></div></div>'});
+ $("leads").innerHTML=h;
+}
+function toast(t){var x=$("toast");x.textContent=t;x.classList.add("show");clearTimeout(toast.t);toast.t=setTimeout(function(){x.classList.remove("show")},2600)}
+function show(v){var ts=document.querySelectorAll(".tab");for(var i=0;i<ts.length;i++)ts[i].classList.toggle("on",ts[i].getAttribute("data-v")===v);
+ ["today","bot","team"].forEach(function(n){$("v-"+n).classList.toggle("on",n===v)});if(v==="team")$("badge").classList.remove("show");if(v==="bot"&&!opened){opened=true;demoOpen()}}
+var opened=false;
+function demoOpen(){
+ S={course:null,cap:null,lead:{},q:0};chat.innerHTML='<div class="day"><span>TODAY</span></div>';
+ var q="How much is the fashion design course and when is the next intake?";
+ setTimeout(function(){addMe(q);S.course="fd6";
+  var qb=chat.lastChild;play(act("ffees").concat([M("Or tap a topic below, or type your own question 👇",menuBtns())]),function(){chat.scrollTop=Math.max(0,qb.offsetTop-chat.offsetTop-6)});
+ },300);
+}
+function init(){
+ chat=$("chat");
+ var ts=document.querySelectorAll(".tab");for(var i=0;i<ts.length;i++)(function(t){t.onclick=function(){show(t.getAttribute("data-v"))}})(ts[i]);
+ $("goBot").onclick=function(){show("bot")};
+ $("form").addEventListener("submit",onSend);
+ $("restart").onclick=function(){if(busy)return;demoOpen()};
+ $("clear").onclick=function(){LEADS=[];QN=0;save();renderTeam();$("badge").classList.remove("show")};
+ renderTeam();
+ var hash=(location.hash||"").replace("#","");
+ var wide=window.matchMedia&&window.matchMedia("(min-width:1100px)").matches;
+ if(hash==="bot"||hash==="team")show(hash);
+ if(wide&&!opened){opened=true;demoOpen()}
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+</script>
+</body>
+</html>
